@@ -1,0 +1,109 @@
+img {
+    width: 30%;
+}
+
+#input {
+    width: 10%;
+}
+
+/* Grid for all sections */
+
+.column {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1fr, 2);
+    grid-gap: 3%;
+    padding: 1%;
+}
+
+.column img {
+    width: 80%;
+    display: block;
+    /* center */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Program: ArrayLists */
+
+#custom {
+    grid-column: 1/2;
+}
+
+#default {
+    grid-column: 2/3;
+}
+
+/* Program: DLL */
+
+#dll {
+    grid-column: 1/2;
+}
+
+#catch {
+    grid-column: 2/3;
+}
+
+/* Program: BST */
+
+#bst {
+    grid-column: 1/2;
+}
+
+#iterator {
+    grid-column: 2/3;
+}
+
+/* Text colours */
+
+h3+p {
+    color: #C2CDFF;
+}
+
+h3,
+h2 {
+    color: #758FFF;
+}
+
+/* Small Devices */
+@media only screen and (max-width: 590px) {
+
+    /* Image size */
+
+    #input {
+        width: 30%;
+    }
+
+    .column img {
+        display: inline;
+        width: 99%;
+    }
+
+    /* Remove grid */
+    .column {
+        display: block;
+    }
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 590px) and (max-width: 769px) {
+
+    /* Image size */
+    img {
+        width: 55%;
+    }
+
+    #input {
+        width: 20%;
+    }
+
+    .column img {
+        display: inline;
+        width: 70%;
+    }
+
+    /* Remove grid */
+    .column {
+        display: block;
+    }
+}

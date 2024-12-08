@@ -1,0 +1,102 @@
+/* General */
+
+html {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+nav a,
+h1,
+footer {
+    color: #B77DED;
+    /* Text colour of nav links */
+}
+
+header h1 {
+    display: none;
+}
+
+/* Main content */
+main {
+    text-align: center;
+}
+
+h1 {
+    text-align: left;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 590px) {
+
+    html {
+        font-size: calc(14pt - 2vw);
+    }
+
+    img {
+        width: 99%;
+    }
+
+    main h1 {
+        display: none;
+    }
+
+    /* Navigation menu */
+
+    header h1 {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 3%;
+    }
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 590px) and (max-width: 769px) {
+
+    main h1 {
+        display: none;
+    }
+
+    /* Navigation menu */
+
+    header h1 {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,66 @@
+/*
+Use Bootstrap or a CSS Grid/Flexbox technology for your layouts.
+Use ext CSS. Should be possible to change the theme of website by changing these
+Responsive (2 break points)
+Accessible: contrast ratios, nav, & robustness (does media work for most technologies, alt or formats) */
+
+/* Grid of table & video */
+
+section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1fr, 2);
+    grid-gap: 3%;
+}
+
+/* table */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    color: #D8DB00;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 90%;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+/* video */
+
+video {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #D8DB00;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 90%;
+}
+
+/* Small Devices */
+@media only screen and (max-width: 590px) {
+
+    section {
+        display: block;
+    }
+
+    table, video {
+        width: 95%;
+    }
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 590px) and (max-width: 769px) {
+
+    section {
+        display: block;
+    }
+
+    video {
+        width: 70%;
+    }
+}

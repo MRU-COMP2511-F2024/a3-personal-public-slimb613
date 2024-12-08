@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Shweta Limbu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Information</title>
+
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/pg5.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacts</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="pg1.html">Projects</a>
+            <a href="pg4.html">Myself</a>
+            <a href="pg5.html">Contacts</a>
+        </nav>
+    </header>
+    <!-- A page that includes a form to contact you -->
+    <main>
+        <h1>Contacts</h1>
+        <form action="mailto:slimb613@mtroyal.ca" method="post">
+            <fieldset>
+                <legend id="register">
+                    <h2>Reach out to me! Lets connect :D</h2>
+                </legend>
+
+                <p>To text: <a href="sms:+3699988682">+369-9988-682</a></p>
+                <p>To call: <a href="tel:+3699988682">+369-9988-682</a></p>
+                <p>To send an email: <a href="mailto:+slimb613@mtroyal.ca">slimb613@mtroyal.ca</a></p>
+
+                <br>
+                Or fill in the form below to send one!
+                <br>
+
+                <p>Salutation:<br>
+                    <input type="radio" id="miss" name="salutation" value="Miss" checked required>
+                    <label for="miss">Miss</label><br>
+                    <input type="radio" id="mrs" name="salutation" value="Mrs">
+                    <label for="mrs">Mrs</label><br>
+                    <input type="radio" id="mr" name="salutation" value="Mr">
+                    <label for="mr">Mr</label>
+                </p>
+
+                <div>
+                    <p><label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name" autofocus required>
+                    </p>
+                    <p><label for="last-name">Last name :</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </p>
+                </div>
+
+                <div>
+                    <p><label for="phone-number">Phone number:</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                            placeholder="123 456 7890">
+                    </p>
+                    <p><label for="email">Email:</label>
+                        <input type="email" id="email" name="email" pattern=".+@gmail\.ca" placeholder="name@gmail.com"
+                            required>
+                    </p>
+                </div>
+
+                <p><label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </p>
+                <p>
+                    <label for="body">Content:</label>
+                    <textarea id="body" name="body" required></textarea>
+                </p>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </fieldset>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <p class="copyright">&copy; 2024 Chips Quest. All rights reserved</p>
+    </footer>
+</body>
+
+</html>

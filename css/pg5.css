@@ -1,0 +1,26 @@
+fieldset div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#subject,
+#body {
+    width: 30%;
+}
+
+/* TExt color */
+h2 {
+    color: #FFC18F;
+}
+
+a {
+    color: #F56E00;
+}
+
+@media only screen and (max-width: 590px) {
+    
+    fieldset div {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

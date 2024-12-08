@@ -1,0 +1,33 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+dl,
+dt,
+dd {
+    padding: 1%;
+}
+
+/* Text colours & styling */
+h2 {
+    color: #FFC2EF;
+}
+
+a,
+em {
+    color: #FF47CE;
+}
+
+@media only screen and (max-width: 590px) {
+
+    dl,
+    dt,
+    dd {
+        padding: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

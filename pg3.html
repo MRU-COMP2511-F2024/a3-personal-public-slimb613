@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="Shweta Limbu">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Programming Projects</title>
+
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/pg3.css">
+</head>
+
+<body>
+  <header>
+    <h1>Programming Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pg1.html">Projects</a>
+      <a href="pg4.html">Myself</a>
+      <a href="pg5.html">Contacts</a>
+    </nav>
+  </header>
+
+  <!-- Programming projects: Describe the objectives of a coding project you worked upon and share screen shots of illustrative code snippets you developed that illustrate your learning. Discuss challenges and how you overcame them. Include descriptions of your workflow that make clear your competence and success. -->
+  <!-- For each artefact, write thoughtful and introspective descriptions of your work, highlighting skills, 
+      techniques, challenges and lessons learned. Consider including short personal but appropriate anecdotes that make clear how the artefacts show your growth and how you see your skills developing in the future. -->
+  <!--For each of these pages, include a short (1 to 3 paragraph) written description of what you were asked to do, your development process (including acknowledging your mistakes, and how you resolved them), and your sense of the learning, success and personal growth.-->
+  <main>
+    <h1>Programming Projects</h1>
+    <h2>Data Structures</h2>
+    <p>This assignment involves analyzing Avengers' popularity by processing input text to determine the frequency and
+      order of mentions of their aliases or last names, using standard data structures to output statistics. Below is
+      an example of the input and expected output.</p>
+
+    <img id="input" src="images/avengerInput.PNG"
+      alt="Multiple formats of many avengers including their name and hero alias." title="Input example">
+    <img src="images/avengerOutput.PNG" alt="Types of statistics shown as a result of input and program"
+      title="Output example">
+
+    <br><br>
+
+    <article>
+      <h3>ArrayLists</h3>
+      <p>Utilized the Comparable class and its compareTo method to implement collection sorting while creating new
+        custom ordering methods.</p>
+
+      <section class="column">
+        <div id="custom">
+          <img src="images/avenger1.1.PNG"
+            alt="Using Collection.sort method with my own ordering method to sort descendingly"
+            Title="Sorting from descending frequency">
+          <img src="images/avenger1.3.PNG" alt="My own ordering method to sort descendingly"
+            title="Function that sorts from descending frequency">
+        </div>
+
+        <div id="default">
+          <img src="images/avenger1.2.PNG" alt="Using Collection.sort method with default method to sort alphbetically"
+            title="Sorting alphbetically">
+          <img src="images/avenger1.4.PNG" alt="Creating default compareTo and equals method" title="Default ordering">
+        </div>
+      </section>
+
+      <p>Understanding the difference between the compareTo method and the compare method was essential, though it
+        was a challenging concept for me to grasp. I found it fascinating that Collections.sort automatically sorts
+        lists, which made me reflect on how much coding relies on pre-programmed automation. It left me wondering just
+        how far this kind of automation will take us in the future.
+      </p>
+    </article>
+
+    <br>
+
+    <article>
+      <h3>Doubly Linked Lists</h3>
+      <p>I implemented my own ordered doubly linked list and added a try-catch block to display a helpful message
+        instead of throwing an error.</p>
+      <section class="column">
+
+        <div id="dll">
+          <img src="images/avenger2.1.PNG" alt="How comparators were used using doubly linked lists"
+            title="Creating doubly linked lists">
+          <img src="images/avenger2.2.PNG" alt="Class of doubly linked list containing all the ordering methods"
+            title="Doubly linked list class">
+          <img src="images/avenger2.3.PNG" alt="Class of doubly linked node containing initialising methods"
+            title="Doubly linked node class">
+        </div>
+
+        <div id="catch">
+          <img src="images/avenger2.4.PNG" alt="Details of the try-catch block" title="Try-catch Block">
+        </div>
+      </section>
+
+      <p>This was really enjoyable to learn and implement. Although it was slightly complicated, the logic was quite
+        straightforward. I spent a considerable amount of time fixing a bug that had left two of my teachers puzzled
+        before I finally resolved it—hats off to experienced teachers!</p>
+    </article>
+
+    <br>
+
+    <article>
+      <h3>Binary Search Trees</h3>
+      <p>I implemented my own Binary Search Tree and leveraged its properties, such as being iterable, which made it
+        easy to loop through the tree. The implementation heavily utilized recursive and iterable methods!</p>
+
+      <section class="column">
+        <div id="bst">
+          <img src="images/avenger3.1.PNG" alt="How comparators were used in binary search trees"
+            title="Creating binary search trees">
+          <img src="images/avenger3.2.PNG" alt="Class of binary search trees containing all the ordering methods"
+            title="Binary search trees class">
+          <img src="images/avenger3.3.PNG" alt="Class of binary search trees node containing initialising methods"
+            title="Binary search trees node class">
+        </div>
+
+        <div id="iterator">
+          <img src="images/avenger3.4.PNG" alt="example of using iterator of binary search tree"
+            title="Iterating through a binary search tree">
+        </div>
+      </section>
+
+      <p>I was initially terrified of this assignment because there was so much to unpack. I made sure to
+        fully understand all the elements of the Binary Search Tree before implementing each method individually,
+        ensuring everything worked. It turned out to be easier than I expected, and I'm really
+        happy that it works! Outside of coding, it's also fun to trace the process on paper.</p>
+    </article>
+  </main>
+  <br>
+    <footer>
+        <p class="copyright">&copy; 2024 Chips Quest. All rights reserved</p>
+    </footer>
+</body>
+</html>
